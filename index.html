@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<hmtl>
+  <head>
+    <meta charset="utf-8"/>
+    <script type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Assignment 3</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Control Type</th>
+        <th>Control</th>
+        <th>Value Entered</th>
+      </tr>
+      <tr>
+        <td>input type="checkbox"</td>
+        <td>
+          <input id="checkbox" type="checkbox" name="name" value="value" />
+        </td>
+        <td id="checkbox-output" ></td>
+      </tr>
+      
+      <tr>
+        <td>input type="color"</td>
+        <td><input id="color" type="color" name="name"  />
+        </td>
+        <td id="color-output"></td>
+      </tr>
+      
+      <tr>
+        <td>input type="date"</td>
+        <td><input id="date" type="date" name="name" />
+        </td>
+        <td id="date-output"> </td>
+      </tr>
+     
+      <tr>
+        <td>input type="email"</td>
+        <td> <input id="email" type="email" name="name" />
+        </td>
+        <td id="email-output"></td>
+      </tr>
+      
+      <tr>
+        <td>input type="number"</td>
+        <td> <input id="number" type="number" name="number"/></td>
+        <td id="number-output"></td>
+      </tr>
+      
+      <tr>
+        <td>input type="radio"</td>
+        <td> <input id="radio" type="radio" name="radio" /></td>
+        <td id="radio-output"></td>
+      </tr>
+     
+      <tr>
+        <td>input type="text"</td>
+        <td> <input id="text" type="text" name="text"/></td>
+        <td id="text-output"></td>
+      </tr>
+     
+    
+    </table>
+  </body>
+  <script>
+    $( "#checkbox" ).change(function() {
+      var checkboxValue = $('#checkbox').prop("checked");
+      console.log(checkboxValue);
+      if(checkboxValue === false)
+        $( "#checkbox-output").html('false');
+      else
+        $( "#checkbox-output").html(checkboxValue);
+    }).change();
+    
+     $( "#color" ).change(function() {
+      var colorValue = $('#color').prop("value");
+      console.log(colorValue);
+        $( "#color-output").html(colorValue);
+    }).change();
+    
+     $( "#date" ).change(function() {
+      var dateValue = $('#date').prop("date");
+      console.log(DateValue);
+        $( "#date-output").html(DateValue);
+    }).change();
+    
+    $( "#email" ).change(function() {
+      var emailValue = $('#email').prop("entered");
+      console.log(emailValue);
+      if(emailValue === false)
+        $( "#email-output").html('false');
+      else
+        $( "#email-output").html(emailValue);
+    }).change();
+    
+        $( "#number" ).change(function() {
+      var numberValue = $('#number').prop("entered");
+      console.log(numberValue);
+        $( "#number-output").html(numberValueValue);
+    }).change();
+    
+      $( "#radio" ).change(function() {
+      var radioValue = $('#radio').prop("checked");
+      console.log(radioValue);
+        $( "#radio-output").html(radioValue);
+    }).change();
+    
+      $( "#text" ).change(function() {
+      var textValue = $('#text').prop("entered");
+      console.log(textValue);
+        $( "#text-output").html(textValue);
+    }).change();
+    
+    
+  </script>
+</hmtl>
